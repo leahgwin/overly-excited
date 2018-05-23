@@ -10,13 +10,15 @@ function addExcitement (theWordArray) {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = [];
-
-
     for (let i = 0; i < sentence.length; i++) {
        buildMeUp.push(sentence[i]);
+        // If the current value of the counter variable can be evenly divided by 3 - using the JavaScript remainder operator - then add a single exclamation point (!) to the output.
+       if((i+1) % 3 === 0) {
+        buildMeUp.push("!");
+        }
         console.log(buildMeUp);
     }
-
+  
 }
 
 // Invoke the function and pass in the array
